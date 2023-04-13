@@ -6,6 +6,10 @@ https://access.redhat.com/articles/6218901
 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html-single/install/index
 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html-single/install/index#doc-wrapper
 
+# OpenShift cluster details
+  > One OCP cluster to be on running state with latest version
+  > Available resources to deploy and configuration RHACM
+  
 
 
 
