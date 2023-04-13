@@ -1,1 +1,11 @@
+# Import cluster using Web-UI and CLI
 
+Web-UI methord:
+
+Step-01: 
+  > login to RHACM dashboard
+  > Under Infrastructure -> Cluster -> Managed clusters -> Import clister (click this option)
+    Name: manage-cluster-01
+    Cluster set: {}
+    
+    
