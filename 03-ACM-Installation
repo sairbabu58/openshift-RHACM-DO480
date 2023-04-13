@@ -1,1 +1,24 @@
+# RHACM installation and configuration
 
+Step-01:
+  > login to openshift cluster
+  > search the 'Advance Cluster Management' from operator hub
+  > click and install the RHACM operator (Note: always go for 'Manual' installation process for RHACM)
+  > Wait for RHACM operator state == installed
+  
+Step-02:
+  > once installation is done
+  > create 'Create MultiClusterHub' instance
+  > wait and see the status, it should be on running state
+  
+  
+Step-03: 
+  > Validation plan
+  $ login to openshift cluster where RHACM is running 
+  $ oc get po -n open-cluster-management
+  $ oc get route -n open-cluster-management
+  $ open the RHACM dashboard 
+    > Under Infrastructure -> Cluster -> Managed cluster (see the local-cluster is on READY state)
+    
+  
+  
