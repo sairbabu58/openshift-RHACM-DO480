@@ -18,3 +18,4 @@ Namespace lists:
   > open-cluster-management-agent                       (contains the deployments for the klusterlet agent)
   > open-cluster-management-agent-addon                 (contains the application's deployments,s earch engine, and policies engines)
   > open-cluster-management-agent-addon-observability   (contains the observability engine's deployments)
+
