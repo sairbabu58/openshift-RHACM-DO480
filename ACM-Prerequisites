@@ -16,6 +16,14 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
   > Upgrade Hub cluster or Managed cluster using RHACM 
   
   
+# Additional validation
+  > Internet connectivity between Hub & managed cluster
+  > oc or kubectl command line
+  > base64 utility
+  > cluster admin permission
+  
+  
+  
 
 
 
