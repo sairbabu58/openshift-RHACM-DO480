@@ -1,9 +1,20 @@
 # Hub cluster (Main cluster where you can manager other k8s or openshift cluster)
 # Manage cluster (other k8s or openshift cluster managed by Hub cluster)
 
-# Once ACM istallation is done, it will create some namespace on Hub Cluster
-  > open-cluster-management (content main features like; ACM web-console, application search engine, deploy & manage lifecycle of cluster)
-  > open-cluster-management-hub (content the deployments that receive data from the managed clusters)
-  > open-cluster-management-observability (content all the thanos deployment that store, create & visualize the observability. the namespace on present if you enable the RHACM obeservability engine)
+# Once ACM istallation is done, it will create some namespaces on Hub Cluster
+  > open-cluster-management                 (content main features like; ACM web-console, application search engine, deploy & manage lifecycle of cluster)
+  > open-cluster-management-hub             (content the deployments that receive data from the managed clusters)
+  > open-cluster-management-observability   (content all the thanos deployment that store, create & visualize the observability. the namespace on present if you enable the RHACM obeservability engine)
   
+# Once Managed cluster is added to Hub cluster, it will create some namespaces on Managed cluster
+Agent lists:
+  > theklusterletagent
+  > thesearchengineadd-on
+  > the add-on for managing application deployments from RHACM
+  > the add-on for applying policies
+  > theadd-onfortheobservabilitycomponents
 
+Namespace lists:
+  > open-cluster-management-agent                       (contains the deployments for the klusterlet agent)
+  > open-cluster-management-agent-addon                 (contains the application's deployments,s earch engine, and policies engines)
+  > open-cluster-management-agent-addon-observability   (contains the observability engine's deployments)
