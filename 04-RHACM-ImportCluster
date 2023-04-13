@@ -22,6 +22,18 @@ Step-02:
   > validate the new cluster name and status 
   
   
-    
+  
+# Remove managed cluster from RHACM
+
+Step-01:
+  > Validation
+  > Login to RHACM dashboard
+  > Under Infrastructure
+  > Cluster
+  > Managed cluster
+  > Choose/select your cluster name
+  > Right side (...) click 
+  > Detach cluster
+  
     
     
