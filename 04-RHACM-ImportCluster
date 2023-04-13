@@ -4,8 +4,24 @@ Web-UI methord:
 
 Step-01: 
   > login to RHACM dashboard
-  > Under Infrastructure -> Cluster -> Managed clusters -> Import clister (click this option)
+  > Under Infrastructure -> Cluster -> Managed clusters -> Import cluster (click this option)
     Name: manage-cluster-01
     Cluster set: {}
+    Additional labels: {}
+    Import mode: Run import command manually
+    Save import and generate code: (click it)
+    Copy command: (copy command and excute on managed cluster)
+    
+    
+Step-02:
+  > Validation
+  > Login to RHACM dashboard
+  > Under Infrastructure
+  > Cluster
+  > Managed cluster
+  > validate the new cluster name and status 
+  
+  
+    
     
     
