@@ -9,6 +9,12 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
 # OpenShift cluster details
   > One OCP cluster to be on running state with latest version
   > Available resources to deploy and configuration RHACM
+  > Install RHACM operator from operator Hub or through cli
+  > Configure RHACM Hub cluster
+  > Add or import Managed cluster
+  > Create new cluster using RHACM
+  > Upgrade Hub cluster or Managed cluster using RHACM 
+  
   
 
 
