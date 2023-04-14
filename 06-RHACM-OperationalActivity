@@ -21,6 +21,17 @@
 
 # Create cluster sets (Add multiple managed cluster to a label. example, cluster1 and cluster2 is a part of prod cluster and cluster3 and cluster4 is a part of dev cluster)
 
+Steps:
+  > RHACM dashboard
+  > Infrastructure
+  > Clusters
+  > Cluster sets -> create cluster set -> Cluster set name(prod) -> create -> Manage resources assignments (choose and click, cluster1 and cluster2) -> review -> save
+Validation:
+  > RHACM dashboard
+  > Infrastructure
+  > Clusters -> choose (cluster1, cluster2) > Labels -> (fine the new lable called prod)
+  
+  
 
 
         
