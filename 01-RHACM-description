@@ -81,6 +81,13 @@ Chapter-03: Deploying and Managing Policies for RHACM
 4) 
 5)
 
+Policy 
+  status:
+   > Enable
+   > Disable
+  Remediation:
+   > Inform
+   > Enforce
 
   
   
