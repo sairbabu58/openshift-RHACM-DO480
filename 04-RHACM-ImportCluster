@@ -9,6 +9,10 @@ Step-01:
     Cluster set: {}
     Additional labels: {}
     Import mode: Run import command manually
+    (optional) > Import types: 
+                1) Run import command manually
+                2) Enter your server URL and API token 
+                3) Kubeconfig file
     Save import and generate code: (click it)
     Copy command: (copy command and excute on managed cluster)
     
