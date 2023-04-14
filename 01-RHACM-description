@@ -32,12 +32,36 @@ Chapter-02:
 3) Role-based Access Control
 
 Infrastructure Tab:
+------------------
 
   > Creating or upgrading a cluster in many different public cloud providers. Importing an existing cluster to the RHACM hub cluster so that you can manage it.
   > Manually scaling the clusters, or enabling autoscaling. The process of resizing a cluster is different if you created the cluster by using RHACM, or if the cluster already existed and you imported it to RHACM.
   > Using RHACM features such as cluster sets, cluster pools, and discovering clusters.
   
-  
+RBAC:
+-----
+
+open-cluster-management: cluster-manager-admin ==> RHACM super user, with full access. Can create a ManagedCluster resource.
+
+open-cluster-management: admin:managed_cluster_name ==> RHACM administrator access to the ManagedCluster resource named managed_cluster_name.
+
+open-cluster-management: view:managed_cluster_name ==> RHACM view access to the ManagedCluster resource named managed_cluster_name.
+
+open-cluster-management: managedclusterset:admin: managed_clusterset_name ==> RHACM administrator access to the ManagedClusterSet resource named managed_clusterset_name.
+
+open-cluster-management: managedclusterset:view: managed_clusterset_name ==> RHACM view access to the ManagedClusterSet resource named managed_clusterset_name.
+
+open-cluster-management: subscription-admin ==> Can create Git subscriptions that deploy Kubernetes resources YAML files to multiple namespaces.
+
+
+RHACM also supports the following default RHOCP roles:
+-----------------------------------------------------
+cluster-admin
+admin
+edit
+view
+
+
   
   
   
