@@ -1,5 +1,7 @@
 # RHACM Operational activity
 
+# Search the resources from search bar.
+
   > Login to RHACP dashboard
   > Click search (ICON)
   > Suggested search templates
@@ -12,4 +14,13 @@
                     namespace:demo01 kind:persistentvolumeclaim
                     kind:persistentvolumeclaim:deployment
                     registry.redhat.io/rhel8/mysql-80 
+                    
+                    
+                    
+                    
+
+# 
+
+
+
         
