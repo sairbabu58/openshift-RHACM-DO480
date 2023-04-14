@@ -1,3 +1,40 @@
 # RHACM Policy configuration
+(Policy can apply to the cluster and validate the status. remediation could be Inform [manual remediation], Enforce [force fully remediation])
+
+# Process to create and apply RHACM policy
+
+Steeps:
+
+> Login to RHACM dashboard
+> Governance
+> create policy
+    -> Name: [policy-certificate-check]
+    -> Namespace: [policy-manager] # create this namespace on Hub cluster before create policy
+    -> Specifications: 
+             1) CertificatePolicy: Certificate management
+             2) ComplianceOperator: Installed the compliance Operator
+             3) ETCDEncryption: Enable ETCD encryption
+             4) LimitRange: Limit Container memory uses
+             5) NameSpcae: Must have namespace 'prod'
+             6) Other Policy 
+> Cluster selector: [mention the clustername]
+> Standards: {}
+> Categories: {}
+> Controls: {}
+> Remediations:
+    1) Inform (It will validate and give the result, we have to manual apply the remediation)
+    2) Enforce (It will validate and force fully apply the remediation)
+> Create
+
+Validation:
+> Governance
+> Choose the policy name
+  1) details
+  2) Clusters
+  3) Templates
+
+
+
+
 
 
