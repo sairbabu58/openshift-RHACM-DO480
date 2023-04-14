@@ -26,3 +26,17 @@ Namespace lists:
 
 
 Chapter-02:
+
+Infrastructure Tab:
+
+  > Creating or upgrading a cluster in many different public cloud providers. Importing an existing cluster to the RHACM hub cluster so that you can manage it.
+  > Manually scaling the clusters, or enabling autoscaling. The process of resizing a cluster is different if you created the cluster by using RHACM, or if the cluster already existed and you imported it to RHACM.
+  > Using RHACM features such as cluster sets, cluster pools, and discovering clusters.
+  
+  
+  
+  
+  
+  
+  
+  
