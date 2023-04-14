@@ -2,6 +2,7 @@
 
 # Search the resources from search bar.
 
+Steps:
   > Login to RHACP dashboard
   > Click search (ICON)
   > Suggested search templates
@@ -35,12 +36,13 @@ Validation:
   
 # IDM integration with Hub cluster, create users and groups. then provide RHACM permission to users or groups.
 
+Steps:
   > CLI login to HUB Cluster
   $ oc adm policy add-cluster-role-to-group open-cluster-management:managedclusterset:admin:<cluster-sets-name>  <user/group name>
   $ oc adm policy add-cluster-role-to-group open-cluster-management:managedclusterset:admin:prod  production-administrators
   $ oc adm policy add-cluster-role-to-group open-cluster-management:managedclusterset:view:stage  production-administrators
   $ oc adm policy add-cluster-role-to-group open-cluster-management:managedclusterset:admin:stage stage-administrators
-  
+
 
 
         
