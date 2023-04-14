@@ -1,1 +1,14 @@
+# RHACM Operational activity
 
+  > Login to RHACP dashboard
+  > Click search (ICON)
+  > Suggested search templates
+    -> Workloads
+    -> Unhealthy pods
+    -> 
+  > Click Search (ICON)
+    -> Search Bar : namespace:demo01 kind:pod
+                    namespace:demo01 kind:deployment
+                    namespace:demo01 kind:persistentvolumeclaim
+                    
+        
