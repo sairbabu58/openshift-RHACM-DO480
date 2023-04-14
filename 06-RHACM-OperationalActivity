@@ -33,7 +33,7 @@ Validation:
   
   
   
-# Idm integration with Hub cluster, create users and groups. then provide RHACM permission to users or groups.
+# IDM integration with Hub cluster, create users and groups. then provide RHACM permission to users or groups.
 
   > CLI login to HUB Cluster
   $ oc adm policy add-cluster-role-to-group open-cluster-management:managedclusterset:admin:<cluster-sets-name>  <user/group name>
