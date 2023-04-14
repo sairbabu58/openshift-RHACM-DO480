@@ -10,5 +10,5 @@
     -> Search Bar : namespace:demo01 kind:pod
                     namespace:demo01 kind:deployment
                     namespace:demo01 kind:persistentvolumeclaim
-                    
+                    kind:persistentvolumeclaim:deployment
         
