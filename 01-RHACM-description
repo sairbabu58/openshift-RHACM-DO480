@@ -88,6 +88,12 @@ Policy
   Remediation:
    > Inform
    > Enforce
+   
+Policy Components:
+  > Policy
+  > PlacementBinding 
+  > PlacementRules
+
 
   
   
