@@ -27,6 +27,10 @@ Namespace lists:
 
 Chapter-02:
 
+1) Search bar
+2) Access Controlr for RHACM
+3) Role-based Access Control
+
 Infrastructure Tab:
 
   > Creating or upgrading a cluster in many different public cloud providers. Importing an existing cluster to the RHACM hub cluster so that you can manage it.
