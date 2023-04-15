@@ -48,6 +48,8 @@ Ref: RHACM Book Chapter-03
 
 # OPA gatekeeper installation and configuration
 
+Example: GateKeeper Operator installing on all managed cluster
+
 Steeps:
 
  > crate a new namespace
