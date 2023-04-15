@@ -28,6 +28,8 @@ Steeps:
     2) Enforce (It will validate and force fully apply the remediation)
 > Create
 
+(Note: before click create, please update the template file. NamesapceSelector.Include: openshift-console, openshift-ingress)
+
 Validation:
 > Governance
 > Choose the policy name
