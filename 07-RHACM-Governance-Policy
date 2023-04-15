@@ -73,7 +73,8 @@ Steeps:
     2) Enforce (It will validate and force fully apply the remediation)
 > Create
 
-(Note: This will only install GateKeeper operator, Again please configure gateKeeper exclude namespace policy)
+(Note: This will only install GateKeeper operator, Again please configure gateKeeper exclude and include namespace policy. Exclude: it will not 
+validate the condation from those NS. Include: * . reset of other NS it will apply the policy. see the example below)
 
 
 
