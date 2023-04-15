@@ -25,6 +25,8 @@ Namespace lists:
 
 
 
+
+
 Chapter-02: 
 
 1) Search bar
@@ -73,6 +75,12 @@ Pratical:
 
 
 
+
+
+
+
+
+
 Chapter-03: Deploying and Managing Policies for RHACM
 
 1) Governance Policies
@@ -113,6 +121,9 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
     $ oc apply -f httpd-v1.2-4.yaml (Allowed. allowed to create)
   
   
+
+
+
 
 
 
