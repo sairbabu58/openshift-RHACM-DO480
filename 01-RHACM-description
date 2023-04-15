@@ -148,6 +148,13 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
   12) Disabled Observability Stack (Chapter-04 )
 
 
+# Customizing Observability
+  1) Customizing Grafana dashboard
+  2) Prometheus Custom query PROMQL language
+  3) Alerts
+  4) Alerting rules
+
+
 
 
 
