@@ -94,6 +94,11 @@ Policy Components:
   > ConfigurationPolicy (Configuration like, create NS, Subscription, OperatorGroup, all types oc Kind resources)
   > PlacementBinding (Ref PlacementRules)
   > PlacementRules (Match cluster selector/name)
+  
+
+# Integration of other Policy Engines with RHACM
+  1) Open Policy Agent (OPA)
+  2) OPA Gatekeeper
 
 
   
