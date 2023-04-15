@@ -91,6 +91,7 @@ Policy
    
 Policy Components:
   > Policy
+  > ConfigurationPolicy
   > PlacementBinding 
   > PlacementRules
 
