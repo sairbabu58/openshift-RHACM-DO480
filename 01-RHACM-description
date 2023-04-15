@@ -100,8 +100,14 @@ Policy Components:
   1) Open Policy Agent (OPA)
   2) OPA Gatekeeper
 
+# OPA Gatekeeper Integration with RHACM
+  1) Install Gatekeeper Operator
+  2) Deploy Gatekeeper Policy
 
-  
+https://github.com/stolostron/policy-collection/blob/main/community/CM-Configuration-Management/policy-gatekeeper-sample.yaml
+https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html-single/governance/index#managing-gatekeeper-operator-policies
+
+
   
   
   
