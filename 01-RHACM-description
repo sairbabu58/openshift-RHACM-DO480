@@ -113,5 +113,17 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
     $ oc apply -f httpd-v1.2-4.yaml (Allowed. allowed to create)
   
   
-  
+
+
+
+
+
+Chapter:04 Installing and Customizing the RHACM Observability Stack
+
+
+
+
+
+
+
   
