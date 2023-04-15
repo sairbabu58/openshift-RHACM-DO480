@@ -73,6 +73,7 @@ Steeps:
     2) Enforce (It will validate and force fully apply the remediation)
 > Create
 
+(Note: This will only install GateKeeper operator, Again please configure gateKeeper exclude namespace policy)
 
 
 
