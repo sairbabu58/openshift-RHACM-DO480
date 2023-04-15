@@ -12,3 +12,33 @@
   10) Follow the RHACM Book Chapter-04 for above configuration
   11) Object storage is require
   12) Disabled Observability Stack (Chapter-04 )
+  
+  
+  
+  
+Steeps: To install and configure Observability (Grafana Dashboard)
+  $ Login to RHACM HUB Cluster
+  $ oc create namespace open-cluster-management-observability
+  $ DOCKER_CONFIG_JSON=$(oc extract secret/pull-secret  -n openshift-config --to=-)
+  $ oc create secret generic  multiclusterhub-operator-pull-secret -n open-cluster-management-observability  --from-literal=.dockerconfigjson="$DOCKER_CONFIG_JSON"  --type=kubernetes.io/dockerconfigjson
+  $ oc apply -f obc.yaml (Create Object storage example, Minio ODF, S3)
+  $ oc extract configmap/thanos-bc  -n open-cluster-management-observability --to=- (Get the bucket details)
+  $ oc extract secret/thanos-bc  -n open-cluster-management-observability --to=-    (Get the secret details)
+  $ vi secret.yaml (Create a new secret with above details. Ref RHACM Chapter-04)
+  $ oc apply -f secret.yaml
+  $ oc apply -f mcobs.yaml (Create the Instance using cli or GUI from RHACM operator. RHACM chapter-04)
+  $ oc get po 
+  
+Validation:
+  1) Login to RHACM Dashboard
+  2) Overview
+  3) Grafana (top right)
+  
+Disable bservability (Grafana Dashboard)
+  1) Login to RHACM hub cluster
+  $ oc label managedcluster managed-cluster  observability=disabled -n open-cluster-management
+  $ oc delete ns open-cluster-management-observability
+  
+  
+  
+  
