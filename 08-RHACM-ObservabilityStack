@@ -34,11 +34,37 @@ Validation:
   2) Overview
   3) Grafana (top right)
   
-Disable bservability (Grafana Dashboard)
+Disable observability (Grafana Dashboard)
   1) Login to RHACM hub cluster
   $ oc label managedcluster managed-cluster  observability=disabled -n open-cluster-management
   $ oc delete ns open-cluster-management-observability
   
   
+# customizing observability
+
+  1) Customizing Grafana dashboard
+  2) Prometheus Custom query PROMQL language
+  3) Alerts
+  4) Alerting rules
+
+# Search the Prometheus query from Grafana dashboard
+  > Login to RHACM 
+  > Overview
+  > Click Grafana 
+  > From Grafana dashboard
+  > Left Panel Explore
+  > add/paste the PROMQL language (Follow the RHACM Chapter-04)
+  > Click Instant 
+  > Right side top, Run Query 
   
+
+
+
+
+
+
+
+
+
+
   
