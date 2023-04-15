@@ -10,4 +10,5 @@
   8) Create a secret (secretname: multiclusterhub-operator-pull-secret in NS: open-cluster-management- observability)
   9) You can extract above secret from (NS: open-cluster-management or openshift-config // secretname: pull-secret)
   10) Follow the RHACM Book Chapter-04 for above configuration
+  11) Object storage is require
 
