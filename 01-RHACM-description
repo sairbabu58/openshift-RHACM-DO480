@@ -130,10 +130,19 @@ https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_managemen
 
 
 Chapter:04 Installing and Customizing the RHACM Observability Stack
+
+
   1) Configure Observability Stack (Default its not enabled)
   2) Monitoring stack
   3) Grafana dashboard
-  4) 
+  4) Centralized Dashboard
+  5) Installed on Hub Cluster
+  6) Require some storage 
+  7) Create namespace for Observability Stack (open-cluster-management- observability)
+  8) Create a secret (secretname: multiclusterhub-operator-pull-secret in NS: open-cluster-management- observability)
+  9) You can extract above secret from (NS: open-cluster-management or openshift-config // secretname: pull-secret)
+  10) Follow the RHACM Book Chapter-04 for above configuration
+  11) 
 
 
 
