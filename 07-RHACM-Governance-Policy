@@ -77,3 +77,13 @@ Steeps:
 
 
 
+
+# GateKeeper Policy example
+    1) We can create policy it will block container image if its latest version
+    $ oc apply -f httpd-latest.yaml (blocked. not allowed to create)
+    $ oc apply -f httpd-v1.2-4.yaml (Allowed. allowed to create)
+    
+
+
+
+
