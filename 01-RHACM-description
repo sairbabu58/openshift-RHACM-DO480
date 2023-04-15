@@ -90,10 +90,10 @@ Policy
    > Enforce
    
 Policy Components:
-  > Policy
-  > ConfigurationPolicy
-  > PlacementBinding 
-  > PlacementRules
+  > Policy (Kind)
+  > ConfigurationPolicy (Configuration like, create NS, Subscription, OperatorGroup, all types oc Kind resources)
+  > PlacementBinding (Ref PlacementRules)
+  > PlacementRules (Match cluster selector/name)
 
 
   
