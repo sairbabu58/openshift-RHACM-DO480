@@ -107,7 +107,10 @@ Policy Components:
 https://github.com/stolostron/policy-collection/blob/main/community/CM-Configuration-Management/policy-gatekeeper-sample.yaml
 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html-single/governance/index#managing-gatekeeper-operator-policies
 
-
+# GateKeeper Policy example
+    1) We can create policy it will block container image if its latest version
+    $ oc apply -f httpd-latest.yaml (blocked. not allowed to create)
+    $ oc apply -f httpd-v1.2-4.yaml (Allowed. allowed to create)
   
   
   
