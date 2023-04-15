@@ -38,6 +38,7 @@ Validation:
 
 Example: Compliance Operator installation and Configuration
 https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.4/html-single/governance/index#compliance-operator-policy
+Ref: RHACM book Chapter-03
 
 
 
