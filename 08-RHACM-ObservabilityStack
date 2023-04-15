@@ -11,4 +11,4 @@
   9) You can extract above secret from (NS: open-cluster-management or openshift-config // secretname: pull-secret)
   10) Follow the RHACM Book Chapter-04 for above configuration
   11) Object storage is require
-
+  12) Disabled Observability Stack (Chapter-04 )
