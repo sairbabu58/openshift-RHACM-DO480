@@ -63,7 +63,19 @@ Steps:
 
 
 # Customizing Resources with Kustomize for RHACM
-
+  base
+    deployment.yaml
+    service.yaml
+    route.yaml
+    kustomization.yaml
+  overlays
+    dev
+      kustomization.yaml
+    prod
+      kustomization.yaml
+      pvc.yaml
+$ kubectl kustomization .
+$ kubectl apply -k .
 
 
 
