@@ -44,5 +44,13 @@ Steps:
                     Europe
                     Africa
                     .....
-       7) Save
+   7) Save
+       
+       
+
+# Additional Scenarios
+  1) Update your Git code Depolyment.replicas: 2 (Wait for some times, get rollout on RHACM)
+  2) Update your git code Depolyment.replicas: 2 (It should rollout every moday at 12PM 'Active Within Specified Interval')
+
+       
        
