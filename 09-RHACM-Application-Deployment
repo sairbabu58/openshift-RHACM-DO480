@@ -1,1 +1,21 @@
+# RHACM Application deployment
+https://github.com/redhattraining/do480-apps/
 
+Steps:
+
+  1) Create a git repo 
+  2) Create/update deployment.yaml, service.yaml, route.yaml
+  3) Login to RHACM dashboard
+  4) Application Tab
+  5) Create Application
+  6) Choose Subscription (ArgoCD is TechPreview)
+       Name: demo-app
+       NameSpcae: demo-ns
+       Repository Type: git
+       URL: https://github.com/sairbabu58/openshift-argocd.git
+       Branch: Master/Main
+       Path: {}(If multiple directory example: my-app)
+       Deploy application resources only on clusters matching specified labels: Label:name name:dev
+       
+       
+       
