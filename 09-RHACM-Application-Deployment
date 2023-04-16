@@ -16,6 +16,34 @@ Steps:
        Branch: Master/Main
        Path: {}(If multiple directory example: my-app)
        Deploy application resources only on clusters matching specified labels: Label:name name:dev
-       
-       
+       Deployment Window: 
+               Always Active 
+               Active Within Specified Interval
+                  Day of the week:
+                     Monday
+                     Tuesday
+                     Wednesday
+                     Thursday
+                     Friday
+                     Sat
+                     Sun
+                  Timezone:
+                    Europe
+                    Africa
+                    .....
+               
+               Blocked Within Specified Interval
+                  Day of the week:
+                     Monday
+                     Tuesday
+                     Wednesday
+                     Thursday
+                     Friday
+                     Sat
+                     Sun
+                  Timezone:
+                    Europe
+                    Africa
+                    .....
+       7) Save
        
