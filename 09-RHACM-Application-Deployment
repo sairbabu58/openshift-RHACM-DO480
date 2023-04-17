@@ -88,6 +88,9 @@ resources:
 
 
 
+
+
+
 # Example for Kustomize Application Deployment on RHACM
 
 Ref the link: https://github.com/sairbabu58/openshift-argocd
