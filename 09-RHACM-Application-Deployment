@@ -88,7 +88,36 @@ resources:
 
 
 
+# Example for Kustomize Application Deployment on RHACM
 
+Ref the link: https://github.com/sairbabu58/openshift-argocd
+
+  1) Create new application from RHACM for DEV
+      > Login RHACM and create Application
+      > Name: demo-application
+      > Namespace: demo-application
+      > Repository Type: git
+      > URL: https://github.com/sairbabu58/openshift-argocd
+      > Branch: demo-dev
+      > Path: overlays/dev
+      > Deploy application resources only on clusters matching specified
+           Label: env 
+           Value: dev
+      > save
+  2) Create new application from RHACM for prod
+      > Login RHACM and create Application
+      > Edit the existing Application
+      > Add Another repository
+      > Choose git
+      > URL: https://github.com/sairbabu58/openshift-argocd
+      > Branch: demo-prod
+      > Path: overlays/prod
+      > Deploy application resources only on clusters matching specified
+           Label: env 
+           Value: prod
+      > save
+      
+  
 
 
 
