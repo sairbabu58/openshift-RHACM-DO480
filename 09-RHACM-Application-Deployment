@@ -67,7 +67,7 @@ Steps:
     deployment.yaml
     service.yaml
     route.yaml
-    kustomization.yaml
+    kustomization.yaml (mention the all files name: deloyment.yaml, service.yaml, route.yaml)
   overlays
     dev
       kustomization.yaml
@@ -77,8 +77,14 @@ Steps:
 $ kubectl kustomization .
 $ kubectl apply -k .
 
+Example:
 
-
+$ vi kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
 
 
 
