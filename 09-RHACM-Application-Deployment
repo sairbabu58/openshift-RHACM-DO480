@@ -92,6 +92,7 @@ resources:
 
 
 # Example for Kustomize Application Deployment on RHACM
+# Add two repos, one is for DEV ENV and another is for PROD ENV
 
 Ref the link: https://github.com/sairbabu58/openshift-argocd
 
