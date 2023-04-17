@@ -74,8 +74,8 @@ Steps:
     prod
       kustomization.yaml
       pvc.yaml
-$ kubectl kustomization .
-$ kubectl apply -k .
+$ kubectl kustomization base/ (Code validation)
+$ kubectl apply -k base (Apply changes)
 
 Example:
 
