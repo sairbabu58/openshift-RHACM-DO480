@@ -293,7 +293,26 @@ Chapter-06: Install and Configure RedHat Quay
  
   
   
+ # Overview of the Quay Architecture
+ 
+  1) Quay server
+      This application manages the images and their metadata; the server is the main way that users interact with the enterprise registry.
   
+  2) Clair scanner
+      This application scans the images, searching for known vulnerabilities.
+  
+  3) Build workers
+      These containers can start builds by reacting to source code repositories changes.
+  4) Redis
+      The Redis server stores build logs.
+      
+  5) Databases
+      The Quay database can be PostgreSQL, MariaDB, or MySQL, provided by Red Hat or by a public cloud provider. Red Hat recommends PostgreSQL because all other database engines are scheduled for deprecation in the near future.
+      The database for Clair can be PostgreSQL only.
+  6) Distributed object storage
+      This storage contains the image's binary content.
+      For a highly-available storage engine, you can subscribe to Red Hat OpenShift Data Foundation. For more information about the distributed object storage, see Deploying and Configuring Red Hat Quay .
+
   
   
   
