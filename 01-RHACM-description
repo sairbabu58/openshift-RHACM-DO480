@@ -200,8 +200,103 @@ Chapter-05: (Deploying Applications Across Multiple Clusters with RHACM)
 
 Chapter-06: Install and Configure RedHat Quay
 
+# Benefits of an Enterprise Registry
 
+  1) Platform scalability:
+     The registry scales both storage and compute resources to manage large numbers of Kubernetes and OpenShift clusters pulling and pushing container images.
 
+  2) Access control
+     A well-defined RBAC model helps you manage teams who access different image repositories on different clusters, or who authenticate against different providers.
+
+  3) Content distribution of the images
+     The registry supports widely-distributed image registry clients by identifying the locations of the stored images and serving each image from the location nearest the client.
+
+  4) Maintenance of the list of images
+     Because registry clients can store many different versions of the same image, the registry provides a mechanism to delete images that are not used.
+
+  5) Secure source of truth
+     The registry helps maintain security by providing access control to images, an auditing registry, and an alerting mechanism.
+     
+     
+     
+# Quay Features:
+  1) Repository Mirroring
+     You can configure Quay to mirror external registries. You can copy entire registries, or define filters based on tags to decide which images to 
+     copy to the internal Quay registry. When Quay mirrors an external registry, it copies the images to its own back-end storage and stores the 
+     metadata information in its database.
+  
+  2) Geo-replication
+     By using the Geo-replication feature, Quay allows you to store registry images in a geographically distributed storage engine. After writing an image 
+     to the preferred storage engine, Quay replicates the image to other storage engines across many synchronized local storage instances. This approach 
+     provides users a single point of access to the registry and associated database.
+
+     Whenever a client pulls a image, Quay serves it directly from the nearest local storage. This feature reduces bandwidth usage and costs and improves 
+     performance for users. The Quay operator supports geo-replication in version 3.7 and later. You can use the repository mirroring and the geo-replication features simultaneously.
+  
+  3) Enterprise Authentication
+    Quay supports the following identity providers: 
+    • LDAP
+    • OpenIDConnect
+    • Keystone,theOpenStackidentityprovider
+    • GitHub 
+    • Google
+    
+  4) Tags Management and Time Machine
+     Quay identifies images by mapping the tag with the full SHA256 identifier of the stored image. You can add, modify, create, or delete tags for each repository.
+     For each image tag, you can configure an expiration period. When a tag expires, or is deleted, the Quay time machine feature keeps the tag for an additional configurable period. Note that when an image tag reaches its expiration, or is deleted, the underlying image is deleted only if there are no more tags pointing to its full SHA256 identifier.
+     Tag management and time machine features address the challenge of maintaining reasonable storage sizes when the number of stored images grows. Furthermore, with these features you can recover deleted tags.
+
+  5) Image Scanning
+     Quay has an image vulnerability scanner based on the Clair open source project.
+     You can use the Quay operator to install and configure the Quay vulnerability scanner when Quay is running on OpenShift.
+     When Quay receives a push, it sends the image to Clair. Clair unpacks the image and indexes its layers. Then, Clair compares the indexed content with the information from the vulnerabilities databases. Finally, Clair generates the results for Quay.
+     
+     The indexing mechanism helps save compute resources and reduces the number of scans.
+     
+     The Red Hat OpenShift Platform Plus subscription includes Quay and Red Hat Advanced Cluster Security for Kubernetes (RHACS). RHACS also includes image scanning. However, in addition to scanning images in a registry like Quay, the RHACS scanner can also scan running containers.
+     
+     The Quay image scanning feature analyzes stored images by consulting the following list of vulnerabilities databases:
+        • Alpine SecDB
+        • AWSUpdateInfo
+        • Debian Oval
+        • Oracle Oval
+        • RHELOval
+        • SUSEOval
+        • UbuntuOval
+        • Pyup.io(Pythonlibraries)
+
+  
+  6) Builds
+     You can configure Quay to watch source code repositories and build images when a change is detected.
+     When Quay is running on OpenShift, Quay builds images using the buildah command in a Kubernetes job that uses a containerized virtual machine.
+  
+  7) Notifications
+     Quay can send notifications for repository events. The following list shows the event types.
+      • An image push
+      • The start, stop, fail, cancellation, or queue of a build
+      • A vulnerability detection
+     The following list shows the notification actions.
+      • Quay notification in the Quay web console
+      • Email
+      • WebhookPOSTrequest
+      • Flowdock chat system
+      • Hipchatchatsystem
+      • Slackchatsystem
+  8) Prometheus and Grafana Metrics
+    Quay provides an endpoint that exports Prometheus data.
+    
+    The Quay operator adds a new Grafana dashboard with Quay metrics to the OpenShift console. This dashboard shows the following statistics, among others.
+      • Number of users, organizations, repositories, and robot accounts
+      • Computeresourcesconsumption
+      • Image pulls and pushes
+      • Authenticationrequests
+ 
+  
+  
+  
+  
+  
+  
   
   
   
