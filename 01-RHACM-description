@@ -316,9 +316,37 @@ Chapter-06: Install and Configure RedHat Quay
   
   
   
+# The Quay operator
+
+The operator manages the lifecycle of one or more Quay registries running in an OpenShift cluster. This operator provides the QuayRegistry custom resource definition (CRD) and allows you to choose which components the operator controls.
+The Quay operator can manage the following components.
+  • postgres: If managed, the operator creates the needed pods for the Quay metadata database.
+
+  • clair: If managed, the operator creates the needed pods for the scanner database and application.
+
+  • redis: If managed, the operator creates the Redis pods needed for build logs storage.
+
+  • objectstorage: If managed, the operator uses the ObjectBucketClaim API to provide storage for image data.
+
+  • route: If managed, the operator creates an OpenShift route to access the registry.
+
+  • monitoring: If managed, the operator configure OpenShift and Quay to gather metrics from the Quay registries.
+
+  • tls: If managed, the operator uses the default wildcard certificate for the OpenShift route to access Quay.
   
+  • horizontalpodautoscaler: If managed, the operator defines resources for autoscaling Quay, Clair, and the pods used for mirroring.
+
+  • mirror: If managed, the operator enables the mirror workers.
   
-  
+
+# Benefits of Using Quay on OpenShift
+
+• The Quay installation on OpenShift is customizable and repeatable.
+• The Quay operator can manage one or more Quay registries.
+• The operator can manage Quay and all of its dependent components.
+• Quay resources scale automatically when usage grows.
+• Updating Quay on OpenShift is easier than updating a standalone installation.
+• The Quay monitoring, alerting, and logging engines integrate with OpenShift engines.
   
   
   
