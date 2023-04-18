@@ -14,7 +14,7 @@ https://access.redhat.com/documentation/en-us/red_hat_quay/3.8/html/configure_re
   
 After installed Quay, How to modify the configuration
   1) edit the config.yaml 
-  2) update the secret
+  2) Create new secret using above file (Note: update the secret with above file will not work)
   or
   3) Use config editor 
   https://access.redhat.com/documentation/en-us/red_hat_quay/3.8/html-single/deploy_red_hat_quay_on_openshift_with_the_quay_operator/index#operator-config-ui-access
@@ -27,9 +27,11 @@ Steps to Install Quay
 ----------------------
 
   $ create a namespace
+  $ install Quay Operator
   $ create config.yaml
   $ create secret using above config.yaml
   $ create QuayRegistry instance
+  
 
 
 
