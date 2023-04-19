@@ -79,7 +79,18 @@ Validation
  
     
     
-  
+# Quay Registry Integration with RHACM
+  1) Create RHACM Policy and apply the changes
+
+IMP Note:
+
+      spec:
+        registrySources:
+            allowedRegistries:
+               - central-quay-registry.apps.ocp4.example.com/finance    # Path also accepted
+               - registry.redhat.io
+               - registry.access.redhat.com
+               - quay.io
   
   
   
