@@ -81,6 +81,7 @@ Validation
     
 # Quay Registry Integration with RHACM
   1) Create RHACM Policy and apply the changes
+  2) Create Robot accout (Follow the documents Chapter-06)
 
 IMP Note:
 
