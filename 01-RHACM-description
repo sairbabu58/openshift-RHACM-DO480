@@ -349,7 +349,14 @@ The Quay operator can manage the following components.
 • The Quay monitoring, alerting, and logging engines integrate with OpenShift engines.
   
   
-  
+# pratical:
+  1) Install RedHat Quay operator
+  2) Configure Quay Instance
+  3) Create a podman Containerfile
+  4) Build a demo image
+  5) Push to quay registry
+  6) Validation
+  7) Quay RBAC
   
   
   
