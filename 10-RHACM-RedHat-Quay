@@ -58,7 +58,25 @@ Validation
    16) Login using same user
    17) Checked the current pushed images
    
-    
+   
+   
+   
+# Quay RBAC
+  1) Login to Quay registry
+  2) Create New organization
+  3) team-a
+  4) Create New Repository (two repo)
+  5) dev-images (Public/Private)
+  6) prod-images (Public/Private)
+  
+  7) Under organization (team-a) 
+  8) Create New team
+  9) deployers
+  10) Choose the repository (dev-images, prod-images)
+  11) provide the permission to repository (None, Read, Write)
+  
+  12) Click deployer team and click 'Enable Directory Synchronization' (AD users)
+ 
     
     
   
