@@ -26,13 +26,51 @@ After installed Quay, How to modify the configuration
 Steps to Install Quay
 ----------------------
 
-  $ create a namespace
   $ install Quay Operator
   $ create config.yaml
   $ create secret using above config.yaml
   $ create QuayRegistry instance
   
 
-
+Operator Installation:
+  $ Login to OpenShift Hub cluster
+  $ Go to OperatorHub
+  $ install RedHat Quay
+    1) Stable-3.*
+    2) Default namespace
+    3) Automatic
+ 
+Configuration and Quay Instance:
+    4) Create config.yaml (Ref the chapter-06)
+    5) oc new-project registry
+    6) oc create secret generic --from-file config.yaml=./config.yaml --from-file ldap.crt=./ldap.crt init-config-bundle-secret  -n registry
+    7) Create quay registry instance  (Ref the chapter-06)
+    8) oc apply -f registry.yaml
+    9) oc get po 
+    
+Validation
+   10) Create a simple podman image form Containerfile (Ref the chapter-06)
+   11) Build the image
+   12 Login to quay registry (Get the Quay URL)
+   13) podman push localhost/hello <quay-registory>/<username>/hello
+   14) Push to Quay registry
+   15) Open browser and access the quay registry 
+   16) Login using same user
+   17) Checked the current pushed images
+   
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
