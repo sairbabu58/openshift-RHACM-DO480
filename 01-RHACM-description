@@ -437,13 +437,30 @@ challenges in Kubernetes environments:
 • SSO and scoped access controls
 
 
+# RHACS Components
 
+  1) Central
+  2) Scanner
 
-  
+# RHACS Secured Cluster Services
 
+  1) Sensor
+  2) Collector
+  3) Scanner
+  4) Admission Controller
   
   
-  
+# Installing RHACS
+
+• Red Hat OpenShift version 4.5 or later
+• Cluster nodes with a supported operating system, such as Amazon Linux, CentOS,
+  Container-Optimized OS from Google, Red Hat Enterprise Linux CoreOS, Debian, Red Hat
+  Enterprise Linux, or Ubuntu
+• At least 4 CPU cores and at least 3 GiB of RAM for the node running the centralized services
+• At least 2 CPU cores and at least 3 GiB of RAM for nodes running the secured cluster services
+• Persistent block storage; Rados Block Device (RBD) storage is recommended
+• Permissions to configure deployments in the OpenShift or Kubernetes clusters
+• AccesstotheRedHatContainerRegistryatregistry.redhat.io
   
   
   
