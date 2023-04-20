@@ -1,1 +1,24 @@
+# Installing RHACS
 
+• Red Hat OpenShift version 4.5 or later
+• Cluster nodes with a supported operating system, such as Amazon Linux, CentOS,
+  Container-Optimized OS from Google, Red Hat Enterprise Linux CoreOS, Debian, Red Hat
+  Enterprise Linux, or Ubuntu
+• At least 4 CPU cores and at least 3 GiB of RAM for the node running the centralized services
+• At least 2 CPU cores and at least 3 GiB of RAM for nodes running the secured cluster services
+• Persistent block storage; Rados Block Device (RBD) storage is recommended
+• Permissions to configure deployments in the OpenShift or Kubernetes clusters
+• AccesstotheRedHatContainerRegistryatregistry.redhat.io
+
+
+# Installation process:
+
+  1) CLI
+  2) OperatorHub
+  3) Helm
+  4) RHACM Policy
+
+
+pratical:
+
+  1) 
