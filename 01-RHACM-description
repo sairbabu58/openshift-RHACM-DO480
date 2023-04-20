@@ -368,7 +368,67 @@ The Quay operator can manage the following components.
 
 
 Chapter-07: Integrating Red Hat Quay with Red Hat OpenShift and RHACM
-  1) 
+  1) RHACM policy for configuration
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+RHACS (Redhat Advance CLuster Security for Kubernetes)
+
+• Securityinthedesignphase
+• Static secure code analysis and best practices
+• Container image vulnerability scanning before deploying to production
+• Secure access to version control systems (VCS)
+• Secure access to the continuous integration system (CI)
+• Automatic build security testing
+• Defensive security, or implementing a Blue Team approach
+
+Additionally, the model must include operational security, such as the following considerations:
+
+• Continuous container image vulnerability scanning for deployments in production
+• Secure access to the continuous deployment system (CD)
+• Automatic security testing of production deployments
+• Offensive security by implementing a Red Team
+• Dynamic security code analysis during run time
+• Incident response planning
+
+The previous security considerations apply to every software development company. However, there are some extra security 
+challenges in Kubernetes environments:
+
+• You need extra knowledge to set up users, groups, service accounts, and the role-based access control (RBAC) configuration.
+• You must secure the VCS repositories containing the platform configuration.
+ You must ensure that container image sources are reliable.
+• You need expertise in software defined networks (SDN).
+• You must secure many new attack vectors, such as container image vulnerabilities, application vulnerabilities, Kubernetes secrets management, and more.
+
+
+# Addressing Security in Kubernetes with RHACS
+
+• Vulnerability management
+• Configurationmanagement
+• Riskprofiling
+• Threat detection
+• Incident response
+• Compliance analysis and reporting
+• Networktrafficsegmentation
+• Muliticlusterstatusvisibility
+
+
+
+
+
+
+
   
 
   
