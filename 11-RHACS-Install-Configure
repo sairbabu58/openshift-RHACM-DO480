@@ -29,3 +29,43 @@ pratical:
   6) get the password for login (From RHACM Hub Cluster-> Installed Operator-> RHACS-> Central-> Details -> Ge the admin console detils username/password )
   7) Login to RHACS Console using admin user and above password
    
+
+
+
+# RHACS INTEGRATION (OpenShift Cluster, Vms or others)
+
+  Example for VM
+    1) Login to RHACS
+    2) Platform Configuration
+    3) Integrations
+    4) Search SYSLOG 
+    5) New Integration
+          > Integration name: workstation
+          > Logging facility: local0
+          > Receiver host: workstation.example.com
+          > Receiver port: 514
+    6) Save and Test the connection
+    
+    
+    
+    
+# OpenShift auth Configuration for RHACS
+    1) Login to RHACS
+    2) Platform Configuration
+    3) Access COntrol
+        > Add Auth provider
+             -> AuthO
+             -> OpenShift Auth
+             -> OpenID Connect
+             -> Google IAP
+             
+        > OpenShift Auth
+          -> Name: cluster-role
+          -> Auth Provider Type: (auto filled)
+          -> Minimum access role: None
+          -> Click New Role
+          
+
+
+
+
