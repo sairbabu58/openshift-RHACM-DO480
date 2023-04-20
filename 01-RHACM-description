@@ -463,7 +463,21 @@ challenges in Kubernetes environments:
 • AccesstotheRedHatContainerRegistryatregistry.redhat.io
   
   
-  
+# RHACS Settings
+  1) Add trusted Certificate Authorities (CAs)
+  2) Add custom TLS certificates
+  3) Add security notices
+  4) Enable offline mode
+  5) Configure alert data retention
+  6) Expose the RHACS portal over HTTP
+  7) Configure automatic upgrades for secured clusters
+  8) Configure a proxy for external access
+  9) Configure endpoints
+  10) Enable Prometheus monitoring
+  11) Reissue internal certificates
+  12) Generate a diagnostic bundle
+
+
   
   
   
