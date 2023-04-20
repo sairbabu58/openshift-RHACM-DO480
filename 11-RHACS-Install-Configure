@@ -13,7 +13,7 @@
 
 # Installation process:
 
-  1) CLI
+  1) CLI (roxclt)
   2) OperatorHub
   3) Helm
   4) RHACM Policy
