@@ -82,7 +82,14 @@ pratical:
       6) Get the permission based on the above RBAC configuration
       
  
-          
+
+
+# Import OpenShift cluster to RHACS
+  There are three methods for imorting cluster to RHACS
+  
+  1) Create a SecuredCluster resource that is provided by the Advanced Cluster Security for Kubernetes operator.
+  2) Use the secured-cluster-services Helm chart, available at https://mirror.openshift.com/ pub/rhacs/charts/.
+  3) Usetheroxctlcommand. 
 
 
 
