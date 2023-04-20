@@ -425,6 +425,16 @@ challenges in Kubernetes environments:
 
 
 
+# Muliticluster Status Visibility with RHACS
+
+• Riskprioritization
+• Runtime activity and forensics
+• Vulnerability threats
+• Configurationrisk
+• Deployment and Kubernetes metadata
+• Globalsearchcapabilities
+• SIEMnotifications
+• SSO and scoped access controls
 
 
 
