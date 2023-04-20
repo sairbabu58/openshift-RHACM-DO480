@@ -49,7 +49,7 @@ pratical:
     
     
     
-# OpenShift auth Configuration for RHACS
+# # OpenShift auth Configuration for RHACS
     1) Login to RHACS
     2) Platform Configuration
     3) Access COntrol
@@ -63,7 +63,25 @@ pratical:
           -> Name: cluster-role
           -> Auth Provider Type: (auto filled)
           -> Minimum access role: None
-          -> Click New Role
+          -> Click New Roles
+               Key: name    (Option: name, group, userid)
+               Value: admin (mention your username or groupname)
+               Role: admin  (Option: admin, Analyst, none, scope manager)
+               
+               Key: name 
+               Value: developer
+               Role: Analyst
+               
+          -> Save
+ Validation:
+      1) Login to RHACS console
+      2) Select auth provider
+      3) Choose 'cluster-login'
+      4) Login with (Kube:admin, Htpasswd_provider, IDM)
+      5) Username and Password
+      6) Get the permission based on the above RBAC configuration
+      
+ 
           
 
 
