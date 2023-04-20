@@ -21,4 +21,11 @@
 
 pratical:
 
-  1) 
+  1) Login to RHACM Hub cluster
+  2) Install RHACS operator from OperatorHub (Default NS: rhacs-operator)
+  3) Configure Instance called 'Central'  (From web-Ui)
+  4) Get the RHACS URL 
+  5) oc get route -n rhacs-operator
+  6) get the password for login (From RHACM Hub Cluster-> Installed Operator-> RHACS-> Central-> Details -> Ge the admin console detils username/password )
+  7) Login to RHACS Console
+  8) 
