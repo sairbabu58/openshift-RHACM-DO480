@@ -27,5 +27,5 @@ pratical:
   4) Get the RHACS URL 
   5) oc get route -n rhacs-operator
   6) get the password for login (From RHACM Hub Cluster-> Installed Operator-> RHACS-> Central-> Details -> Ge the admin console detils username/password )
-  7) Login to RHACS Console
-  8) 
+  7) Login to RHACS Console using admin user and above password
+   
