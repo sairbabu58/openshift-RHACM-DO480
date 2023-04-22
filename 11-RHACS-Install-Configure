@@ -115,7 +115,7 @@ Pratical:
   
   7) Again login to Managed cluster web-UI
   8) Goto RHACM operator
-  9) Create a new instance 'Secured Cluster'
+  9) Create a new instance 'Secured Cluster' (Note: add the centralEndPoint: Central cluster WEB-UI:443 \\ follow the docs chapter-08)
   10) go with defauit setting 
   
   11) Validation
