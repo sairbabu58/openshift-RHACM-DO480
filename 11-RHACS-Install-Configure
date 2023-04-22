@@ -23,7 +23,7 @@ pratical:
 
   1) Login to RHACM Hub cluster
   2) Install RHACS operator from OperatorHub (Default NS: rhacs-operator)
-  3) Configure Instance called 'Central'  (From web-Ui)
+  3) Configure Instance called 'Central'  (From web-Ui with default setting)
   4) Get the RHACS URL 
   5) oc get route -n rhacs-operator
   6) get the password for login (From RHACM Hub Cluster-> Installed Operator-> RHACS-> Central-> Details -> Ge the admin console detils username/password )
@@ -90,6 +90,23 @@ pratical:
   1) Create a SecuredCluster resource that is provided by the Advanced Cluster Security for Kubernetes operator.
   2) Use the secured-cluster-services Helm chart, available at https://mirror.openshift.com/ pub/rhacs/charts/.
   3) Usetheroxctlcommand. 
+  
+Pratical:
+----------
+  1) Login to RHACS webui
+  2) Use default login methord or above OpenShift auth Configuration username and password
+  3) Goto 
+       > Platform Configuration
+       > Integrations
+       > StackRox 'cluster init bundle'
+       > Generate Bundle
+       > Name: managed-cluster-01
+       > Generate
+       > Download file
+  4) Login Managed cluster 01
+  5) Execute this comman 
+  6) $ oc apply -f <above-file.yaml> 
+  
 
 
 
