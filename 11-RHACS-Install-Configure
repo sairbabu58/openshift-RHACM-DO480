@@ -114,7 +114,8 @@ Pratical:
   5) Install RHACS
   6) Click the RHACS Operator
   7) Create a new instance 'Secured Cluster' (Note: add the centralEndPoint: Central cluster WEB-UI:443 \\ follow the docs chapter-08)
-  8) Login Managed cluster 01
+  
+  8) Login Managed cluster 01 cli
   9) Execute this comman 
   10) $ oc apply -f <above-file.yaml> -n rhacs-operator (After installed RHACS operator you will get this NS)
   
