@@ -109,14 +109,14 @@ Pratical:
   (Follow the Document Chapter-08) Bit Doubt on below steps:
   
   Note: Install RHACS on all the managed cluster to create "SecureCluster Instance"
-  4) Login Managed cluster 01
-  5) Execute this comman 
-  6) $ oc apply -f <above-file.yaml> -n rhacs-operator (After installed RHACS operator you will get this NS)
   
-  7) Again login to Managed cluster web-UI
-  8) Goto RHACM operator
-  9) Create a new instance 'Secured Cluster' (Note: add the centralEndPoint: Central cluster WEB-UI:443 \\ follow the docs chapter-08)
-  10) go with defauit setting 
+  4) Again login to Managed cluster web-UI
+  5) Install RHACS
+  6) Click the RHACS Operator
+  7) Create a new instance 'Secured Cluster' (Note: add the centralEndPoint: Central cluster WEB-UI:443 \\ follow the docs chapter-08)
+  8) Login Managed cluster 01
+  9) Execute this comman 
+  10) $ oc apply -f <above-file.yaml> -n rhacs-operator (After installed RHACS operator you will get this NS)
   
   11) Validation
   12) RHACS -> Platform Configuration -> Cluster
