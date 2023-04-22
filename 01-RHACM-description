@@ -492,6 +492,7 @@ Pritical:
   6) Integrate Docker registry
   7) Integrate Google Container Registry
   
+  8) Create Image policy for block the images, version, os ..etc
   
   
   
