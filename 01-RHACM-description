@@ -477,7 +477,17 @@ challenges in Kubernetes environments:
   11) Reissue internal certificates
   12) Generate a diagnostic bundle
 
-
+Pritical:
+----------
+  1) Install RHACS operator on HUB cluster (Cause, HubCluster is the main certral RHACS)
+  2) Configire RHACS Instance 'Certral' on HubCluster to get RHACS Web-UI
+  3) Integrate OpenShift auth type and permission for RHACS Web-UI access 
+  4) Import OpenShift cluster on RHACS for monitoring 
+      > Again install RHACS Operator on Managed cluster
+      > Generate INIT Bundle from RHACS Central cluster
+      > Apply it on Managed cluster
+      > Create Secured Cluster on Managed cluster
+   
   
   
   
