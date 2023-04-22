@@ -489,6 +489,8 @@ Pritical:
       > Create Secured Cluster on Managed cluster
   
   5) Integrate other Linux machine on RHACS and monitor it.
+  6) Integrate Docker registry
+  7) Integrate Google Container Registry
   
   
   
