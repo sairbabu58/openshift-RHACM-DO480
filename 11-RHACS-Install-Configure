@@ -103,9 +103,23 @@ Pratical:
        > Name: managed-cluster-01
        > Generate
        > Download file
+  
+  
   4) Login Managed cluster 01
   5) Execute this comman 
   6) $ oc apply -f <above-file.yaml> -n <any-namespace> (create a new namespace on managed cluster)
+  
+  7) Again login to RHACM web-UI
+  8) Goto RHACM operator
+  9) Create a new instance 'Secured Cluster'
+  10) go with defauit setting 
+  
+  11) Validation
+  12) RHACS -> Platform Configuration -> Cluster
+  
+  
+  
+  
   
 
 
