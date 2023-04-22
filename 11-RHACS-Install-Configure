@@ -111,7 +111,7 @@ Pratical:
   Note: Install RHACS on all the managed cluster to create "SecureCluster Instance"
   4) Login Managed cluster 01
   5) Execute this comman 
-  6) $ oc apply -f <above-file.yaml> -n <any-namespace> (create a new namespace on managed cluster)
+  6) $ oc apply -f <above-file.yaml> -n rhacs-operator (After installed RHACS operator you will get this NS)
   
   7) Again login to Managed cluster web-UI
   8) Goto RHACM operator
