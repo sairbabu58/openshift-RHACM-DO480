@@ -1,1 +1,16 @@
+# Create OpenShift Cluster on AWS
 
+# Process for create OpenShif cluster on AWS
+  1) Create a Credentials for AWS with below details
+      > Add Credentials
+      > Choose AWS
+      > Credential type : Amazon Web Services
+      > Credential name: aws-credential
+      > namespace: aws-cluster (Create NS)
+      > Base DNS domain : example.com (FQDN: ocp4.example.com)
+      > Access key ID: AKIAUASBSMK7FVVUS5RH
+      > Secret access key: A9ykGJwX6BvkxqSOBrBvX311mFq7airxVXe9dc/s
+      > Pull secret: (get it from console.redhat.com/openshift)
+      > SSH private key: 
+      > SSH public key
+      > Save
