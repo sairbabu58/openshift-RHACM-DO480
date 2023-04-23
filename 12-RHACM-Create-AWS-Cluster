@@ -14,3 +14,49 @@
       > SSH private key: 
       > SSH public key
       > Save
+
+  2) Create AWS cluster
+      > Infrastructure -> Cluster -> Create cluster
+      > Infrastructure Provider
+      > AWS
+      > Infrastructure provider credential: aws-credential
+      > Cluster name: ocp4
+      > Cluster set: {}
+      > Base DNS domain: autofill
+      > Release image: quay.io/openshift-release-dev/ocp-release:4.10.57-x86_64 (cluster version)
+      > Additional labels: name=prod, env=prodduction
+      > (NoodPool configure)
+      > Region: choose
+      > Control plane pool
+         Zones:
+         Instance type:
+         Root storage (GiB):
+      > Worker pool 1
+         Pool name: small-worker
+         Zones :
+         Instance type:
+         Node count:
+         Root storage (GiB):
+      > Worker pool 2
+         Pool name: big-worker
+         Zones :
+         Instance type:
+         Node count:
+         Root storage (GiB):
+      > Network type: OVNKubernetes
+      > Cluster network CIDR: 
+      > Network host prefix:
+      > Service network CIDR:
+      > Machine CIDR
+      > Proxy: {}
+      > Automation: {}
+      > Review
+      > Create
+         
+         
+         
+         
+         
+         
+ 
+      
