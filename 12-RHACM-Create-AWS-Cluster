@@ -60,7 +60,60 @@
  $ oc logs -f <pod-name> -c hive
  $ oc get managedclusters
          
-         
+
+
+# Additional Features
+  1) Hibernate Cluster: Not all OpenShift clusters need to run continuously. For example, development clusters are probably not used during the night. 
+     Therefore, it makes sense to hibernate these clusters during off hours to save on cloud hosting costs.
+   >  Infrastructure → Clusters
+   > Choose your cluster
+   > (...) Hibernate
+   > (...) Resume
+   
+   
+   
+# AWS OpenShift cluster secret details.
+  > oc project ocp4
+  > oc get secret| grep ocp4
+  > oc extract secret/<name> --to=-
+  
+  
+  
+# Upgrade cluster
+  > Choose the cluster 
+  > (...) click upgrade
+  
+
+# Scale UP/Down nodes
+  > Choose the cluster
+  > Machine pools 
+  > Choose your Machine pools 
+  > (...) Scale machine pool
+  > Machine set replica count : 3 UP/Down
+  > Scale
+  
+  
+# Work with Cluster Autoscaler
+  > Infrastructure → Clusters.
+  > Select your sno-GUID managed cluster.
+  > Switch to the Machine pools tab, click (...) and select Enable autoscale.
+  > Minimum replicas: 0 
+  > Maximum replicas: 3
+  > Scale
+  
+  Validation:
+  > oc get clusterautoscaler 
+  > oc get machineautoscaler -n openshift-machine-api
+  > oc get machines -n openshift-machine-api
+  > oc get nodes
+  
+  
+  
+  
+  
+  
+  
+
          
  
       
