@@ -58,7 +58,7 @@
  $ oc project ocp4
  $ oc get po
  $ oc logs -f <pod-name> -c hive
- 
+ $ oc get managedclusters
          
          
          
