@@ -8,8 +8,8 @@
       > Credential name: aws-credential
       > namespace: aws-cluster (Create NS)
       > Base DNS domain : example.com (FQDN: ocp4.example.com)
-      > Access key ID: AKIAUASBSMK7FVVUS5RH
-      > Secret access key: A9ykGJwX6BvkxqSOBrBvX311mFq7airxVXe9dc/s
+      > Access key ID: <key-details>
+      > Secret access key: <access-key-details>
       > Pull secret: (get it from console.redhat.com/openshift)
       > SSH private key: 
       > SSH public key
