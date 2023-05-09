@@ -14,11 +14,11 @@ Chapter-01:
   
 # Once Managed cluster is added to Hub cluster, it will create some namespaces on Managed cluster
 Agent lists:
-  > theklusterletagent
-  > thesearchengineadd-on
+  > the klusterletagent
+  > the searchengineadd-on
   > the add-on for managing application deployments from RHACM
   > the add-on for applying policies
-  > theadd-onfortheobservabilitycomponents
+  > the add-on for the observabilitycomponents
 
 Namespace lists:
   > open-cluster-management-agent                       (contains the deployments for the klusterlet agent)
